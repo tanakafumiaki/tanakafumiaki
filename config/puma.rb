@@ -7,7 +7,7 @@
 workers integer(ENV['WEB_CONCURRENCY'||2])
 threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
 threads threads_count, threads_count
-
+rackup DefaultRackup
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
 #
 port        ENV.fetch("PORT") { 3000 }
@@ -32,7 +32,7 @@ workers ENV.fetch("WEB_CONCURRENCY") { 2 }
 # block.
 #
 preload_app!
-rackup DefaultRackup
+
 # If you are preloading your application and using Active Record, it's
 # recommended that you close any connections to the database before workers
 # are forked to prevent connection leakage.
