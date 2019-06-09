@@ -37,5 +37,7 @@ $ rails test
 $ rails server
 ```
 
+第11章よりlocalで作業
+
 詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
 を参考にしてください。
