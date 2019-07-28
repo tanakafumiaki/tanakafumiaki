@@ -13,6 +13,8 @@ gem 'coffee-rails', '4.2.2'
 gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
+#第11章の文字コードエラー解消のため追加
+gem 'mail-iso-2022-jp'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
@@ -24,6 +26,8 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+#   第11章時rails cが起動しなかったため新たにgem追加
+  gem 'rb-readline'
 end
 
 group :test do
